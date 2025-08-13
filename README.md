@@ -15,7 +15,7 @@ A Flutter-based application for counter. This app allows users to sign in with e
 
    ```bash
    git clone https://github.com/balu3679/counter_riverpod.git
-   cd messenger
+   cd counter_riverpod-master
    ```
 
 ## Contact
