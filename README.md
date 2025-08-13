@@ -1,4 +1,4 @@
-# Messenger
+# Counter Riverpod
 
 A Flutter-based application for counter. This app allows users to sign in with email/password and do simple counter operation with reset buttons.
 
