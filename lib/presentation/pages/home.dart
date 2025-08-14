@@ -26,6 +26,7 @@ class HomePage extends ConsumerWidget {
               );
               if (resp) {
                 await logoutUseCase();
+                Constants.showtoast(context, message: 'Logout Successfully');
                 Navigator.pushAndRemoveUntil(
                   context,
                   MaterialPageRoute(builder: (context) => LoginPage()),
