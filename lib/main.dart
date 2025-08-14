@@ -22,9 +22,11 @@ class MyApp extends ConsumerWidget {
     return MaterialApp(
       title: 'Flutter demo',
       theme: ThemeData(primarySwatch: Colors.blue),
+      debugShowCheckedModeBanner: false,
       home: authStateAsync.when(
         data: (user) => user == null ? LoginPage() : HomePage(),
-        loading: () => const Scaffold(body: Center(child: CircularProgressIndicator())),
+        loading: () =>
+            const Scaffold(body: Center(child: CircularProgressIndicator())),
         error: (e, _) => Scaffold(body: Center(child: Text('Error: $e'))),
       ),
     );
